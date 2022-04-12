@@ -1,0 +1,23 @@
+Se nos pide en este ejercicio que implementemos la clase CountingVocals  la cual  lee de un fichero
+de texto carácter a carácter y que, por cada carácter que se lea, se compare si existe en una lista de caracteres. En este caso son vocales. Para realizar esta cuenta,
+se usará una clase denominada CharCounter cuyos argumentos son:
+
+- la cadena de texto con los caracteres dentro de la que habría que buscar el carácter leído por el fichero,
+- un boolen que indique si la clase va a ser sensible o no a las máyúsculas
+
+La clase contiene un método countIfTargeted((char)c), que se encargará de contar dichas vocales.
+
+La clase también tendrá el método toString implementado que dirá cuántas veces se repite cada uno de los caracteres
+
+Para este ejercicio, se controlará el estado del fichero solo en las lecturas y usando la excepción más general:
+(IOException ex).
+
+Clase CharCounter: Para poder hacer que esta clase funciona para cualquier cadena de texto, no solo de vocales,
+se necesita una estructura dinámica, tipo lista o array, pero que sea capaz de almacenar tanto el carácter, como
+el número de veces que éste se repite, por lo que la colección ha de estar formada por una clase que contenga
+dos atributos, el carácter, y el número de veces que se repite. A esta clase le he denominado Registro. El
+atributo carácter será un atributo del objeto que no se puede modificar. Además tendrá un método que
+incrementará al objeto que corresponda, el número de veces que se repite.
+En el construtor de la clase Charcounter se crea la lista comentada anteriormente, formada por objetos Registro,
+con tantos nodos como caracteres tenga la cadena a evaluar y con el contador a 0.
+
