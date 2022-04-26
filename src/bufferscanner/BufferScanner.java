@@ -26,6 +26,7 @@ public class BufferScanner {
             while (registro != null) {
                 //scanner = new Scanner(registro).useLocale(Locale.US);//si los decimales se delimitan por puntos
                 scanner = new Scanner(registro);
+
                 if (scanner.hasNextDouble()) {
                     acumulador += scanner.nextDouble();
                 }

@@ -3,6 +3,8 @@ package tablaenterosafichbinario;
 //ObjectOutput stream
 public class Main {
     public static void main(String[] args) {
-        EnterosABinario.run();
+        EnterosABinario.run();//creamos tres ficheros de salida
+
+
     }
 }
